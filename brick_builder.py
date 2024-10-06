@@ -37,3 +37,22 @@ for row in range(userInput):
     print()
 
 print()
+# ramp
+for row in range(userInput):
+    for col in range(userInput - row - 1):
+        print(" ", end='')
+    for col in range(row + 1):
+        print ("x", end='')
+    print()
+
+print()
+
+# wedge
+for row in range(userInput):
+    for col in range(row + 1):
+        print(" ", end='')
+    for col in range(userInput - row):
+        print("x", end='')
+    print()
+
+print()
