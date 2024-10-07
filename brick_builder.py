@@ -2,27 +2,13 @@
 Brick Builder
 Sidonia Stanton
 10/3/24
+
+Please disregard my notes. I'm keeping them in case I need to come back and see how I did something.
 '''
 
-'''
-*** DELETE BEFORE SENDING ***
-
-1. standard triangle - input # to get base size
-
-2. upside down triangle - same thing but # is top size
-
-3. ramp - standard triangle that aligns right
-
-4. wedge - upside down triangle that aligns right
-
-5. pyramid - similar to ramp - not increasing x by 1 every time bc input # is number of rows
-
-6. empty square - hollow square - input # is base x height 
-
-'''
 userInput = int(input('Please enter a number: '))
 
-'''
+
 # standard triangle
 for row in range(userInput):
     for col in range(row + 1):
@@ -57,10 +43,10 @@ for row in range(userInput):
     print()
 
 print()
-'''
 
-#   F I X
-# pyramid - WIP - use multiple loops - x increase by 2 each time - dont have to include spaces on right
+
+
+# pyramid - x increase by 2 each time - dont have to include spaces on right
 for row in range(userInput): # for each horiz row in the range of user input # -- establush number of rows
     for col in range(userInput - row - 1): # for each row - for each column of O's print single o
         print(" ", end='')
@@ -71,3 +57,12 @@ for row in range(userInput): # for each horiz row in the range of user input # -
 #  add 2 every row - row * 2 + 1
 print()
 
+for row in range(userInput):
+    for col in range(userInput):
+        print(" ", end='')
+        if(row==0 or row==userInput-1 or col==0 or col==userInput-1):
+            print('x', end='')
+        else:
+            print(" ", end='')
+    print()
+   
